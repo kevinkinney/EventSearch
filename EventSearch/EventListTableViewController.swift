@@ -14,6 +14,7 @@ class EventListTableViewController: UITableViewController, UISearchBarDelegate {
 	
 	var eventViewModels = [EventViewModel]()
 	var nextPage = 1
+	var searchInProgress = false
 	
 	var searchRequestTimer: Timer?
 	
@@ -39,11 +40,12 @@ class EventListTableViewController: UITableViewController, UISearchBarDelegate {
 		guard let searchText = searchBar.text else {
 			return
 		}
-		
-		NetworkHandler.shared.requestEvents(forSearch: searchText, page: nextPage).onSuccess { events in
-			let newEventViewModels = events.map { EventViewModel(event: $0) }
+		searchInProgress = true
+		NetworkHandler.shared.requestEvents(forSearch: searchText, page: nextPage).onSuccess { page in
+			let newEventViewModels = page.events.map { EventViewModel(event: $0) }
 			self.nextPage += 1
 			self.eventViewModels.append(contentsOf: newEventViewModels)
+			self.searchInProgress = false
 			self.tableView.reloadData()
 		}
 	}
@@ -65,7 +67,10 @@ class EventListTableViewController: UITableViewController, UISearchBarDelegate {
 	}
 	
 	func getFirstPerformerImageURL(forEvent event: Event) -> URL? {
-		return event.performers.compactMap({$0.imageURL}).first
+		guard let urlString = event.performers.compactMap({$0.image}).first else {
+			return nil
+		}
+		return URL(string: urlString)
 	}
 	
 	@objc
@@ -76,8 +81,9 @@ class EventListTableViewController: UITableViewController, UISearchBarDelegate {
 	// MARK: - UISearchBarDelegate
 	
 	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+		// Use a timer to verify that the user has stopped typing for at least 0.5 seconds.
 		searchRequestTimer?.invalidate()
-		searchRequestTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { _ in
+		searchRequestTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
 			self.clearSearchResults()
 			self.loadNextPageForCurrentSearch()
 		}
@@ -130,8 +136,12 @@ class EventListTableViewController: UITableViewController, UISearchBarDelegate {
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		// If there are no events to show a single row is displayed stating that there were no results
-		return max(eventViewModels.count, 1)
+		// If there are no matches to the current search a single row is displayed stating that there were no results
+		if eventViewModels.count == 0 && !searchInProgress {
+			return 1
+		} else {
+			return eventViewModels.count
+		}
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -14,6 +14,7 @@ class EventViewController: UIViewController {
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var dateLabel: UILabel!
 	@IBOutlet weak var locationLabel: UILabel!
+	@IBOutlet weak var imageUnavailableLabel: UILabel!
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var favoriteButton: UIButton!
 	
@@ -26,7 +27,12 @@ class EventViewController: UIViewController {
 		locationLabel.text = eventViewModel?.locationString
 		dateLabel.text = eventViewModel?.dateString
 		
-		imageView.image = eventViewModel?.image
+		if let image = eventViewModel?.image {
+			imageView.image = image
+			imageUnavailableLabel.isHidden = true
+		} else {
+			imageUnavailableLabel.isHidden = false
+		}
 		imageView.layer.cornerRadius = 6
 		
 		updateFavoritesButton()

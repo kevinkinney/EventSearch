@@ -13,19 +13,27 @@ class EventTableViewCell: UITableViewCell {
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var locationLabel: UILabel!
 	@IBOutlet weak var dateLabel: UILabel!
+	@IBOutlet weak var imageUnavailableLabel: UILabel!
 	@IBOutlet weak var thumbnailImage: UIImageView!
 	@IBOutlet weak var favoriteImage: UIImageView!
 	
 	override func prepareForReuse() {
 		thumbnailImage.image = nil
+		imageUnavailableLabel.isHidden = false
 	}
 	
 	func configure(withModel viewModel: EventViewModel) {
 		titleLabel.text = viewModel.titleString
 		locationLabel.text = viewModel.locationString
 		dateLabel.text = viewModel.dateString
-		thumbnailImage.image = viewModel.image
-		thumbnailImage.layer.cornerRadius = 4
 		favoriteImage.isHidden = !Favorites.isFavotire(viewModel.event.id)
+		
+		if let image = viewModel.image {
+			thumbnailImage.image = image
+			imageUnavailableLabel.isHidden = true
+		} else {
+			imageUnavailableLabel.isHidden = false
+		}
+		thumbnailImage.layer.cornerRadius = 4
 	}
 }

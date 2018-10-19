@@ -30,7 +30,7 @@ class EventViewModel {
 	}
 	
 	var dateString: String {
-		return dateFormatter.string(from: event.date)
+		return dateFormatter.string(from: event.datetime_local)
 	}
 	
 	var locationString: String {

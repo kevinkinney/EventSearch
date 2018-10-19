@@ -2,27 +2,42 @@ PODS:
   - Alamofire (4.7.2)
   - BrightFutures (6.0.1):
     - Result (~> 3.2.4)
+  - OHHTTPStubs (5.2.2):
+    - OHHTTPStubs/Default (= 5.2.2)
+  - OHHTTPStubs/Core (5.2.2)
+  - OHHTTPStubs/Default (5.2.2):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.2):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.2):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.2)
+  - OHHTTPStubs/Swift (5.2.2):
+    - OHHTTPStubs/Core
   - Result (3.2.4)
-  - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
   - Alamofire (= 4.7.2)
   - BrightFutures (= 6.0.1)
-  - SwiftyJSON (= 4.1.0)
+  - OHHTTPStubs (= 5.2.2)
+  - OHHTTPStubs/Swift (= 5.2.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - BrightFutures
+    - OHHTTPStubs
     - Result
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   BrightFutures: 9c03dab79e73ffe504b7bafc15c5bfdaeee54890
+  OHHTTPStubs: 34d9d0994e64fcf8552dbfade5ce82ada913ee31
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 45e9ea869e93c8959e0f68514ab48b315ed3523a
+PODFILE CHECKSUM: d6b7bb8c09c1740dbd800658c032c93307fc938e
 
 COCOAPODS: 1.5.3
