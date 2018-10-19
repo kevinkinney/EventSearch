@@ -37,8 +37,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQo-A3-EVm" userLabel="favorite">
+                            <button opaque="NO" contentMode="center" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQo-A3-EVm">
                                 <rect key="frame" x="330" y="74" width="25" height="25"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Favorite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="1Y3-qX-TO5"/>
                                     <constraint firstAttribute="width" secondItem="EQo-A3-EVm" secondAttribute="height" multiplier="1:1" id="FfE-zb-gaD"/>
@@ -182,6 +183,7 @@
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="ItT-NH-JGL">
                                             <rect key="frame" x="10" y="6" width="20" height="20"/>
+                                            <accessibility key="accessibilityConfiguration" label="favorite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="iwu-kh-yXw"/>
                                                 <constraint firstAttribute="width" constant="20" id="zEv-xd-f5A"/>

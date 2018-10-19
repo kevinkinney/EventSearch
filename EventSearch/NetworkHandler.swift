@@ -38,6 +38,10 @@ class NetworkHandler {
 		configuration.httpAdditionalHeaders = authorizationHeaders
 		
 		sessionManager = SessionManager(configuration: configuration)
+		
+		#if TESTING
+			stubNetworkRequests()
+		#endif
 	}
 	
 	func requestEvents(forSearch searchString: String, page: Int? = nil) -> Future<EventPage, NSError> {

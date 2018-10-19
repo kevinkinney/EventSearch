@@ -44,8 +44,10 @@ class EventViewController: UIViewController {
 		}
 		if Favorites.isFavotire(eventId) {
 			favoriteButton.setImage(#imageLiteral(resourceName: "favorite"), for: .normal)
+			favoriteButton.accessibilityLabel = "Deselect as Favorite"
 		} else {
 			favoriteButton.setImage(#imageLiteral(resourceName: "favorite_unselected"), for: .normal)
+			favoriteButton.accessibilityLabel = "Select as Favorite"
 		}
 	}
 	

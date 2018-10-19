@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A13C02E217A7EC7002405D2 /* NetworkHandler+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A13C02D217A7EC7002405D2 /* NetworkHandler+Mocks.swift */; };
+		0A13C033217A8169002405D2 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A305C3D217A7154006C0781 /* image.png */; };
+		0A13C034217A816C002405D2 /* mock_search_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A305C39217A6459006C0781 /* mock_search_response.json */; };
 		0A305C34217A53D9006C0781 /* VenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A305C33217A53D9006C0781 /* VenueTests.swift */; };
 		0A305C36217A5AB2006C0781 /* PerformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A305C35217A5AB2006C0781 /* PerformerTests.swift */; };
 		0A305C38217A5D0F006C0781 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A305C37217A5D0F006C0781 /* EventTests.swift */; };
@@ -50,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A13C02D217A7EC7002405D2 /* NetworkHandler+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkHandler+Mocks.swift"; sourceTree = "<group>"; };
 		0A305C33217A53D9006C0781 /* VenueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTests.swift; sourceTree = "<group>"; };
 		0A305C35217A5AB2006C0781 /* PerformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformerTests.swift; sourceTree = "<group>"; };
 		0A305C37217A5D0F006C0781 /* EventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
@@ -79,11 +83,14 @@
 		11CC1CDBBEB74F23D0729FF8 /* Pods_EventSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E11AF61943D61892778530 /* Pods-EventSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventSearchUITests/Pods-EventSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2180D8AF4E615F7990B17D99 /* Pods-EventSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventSearchTests/Pods-EventSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4532CA860506D1D6422507E5 /* Pods-EventSearchUITests.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearchUITests.testing.xcconfig"; path = "Pods/Target Support Files/Pods-EventSearchUITests/Pods-EventSearchUITests.testing.xcconfig"; sourceTree = "<group>"; };
+		C4AE6DA02E04B2A9AAD7FB33 /* Pods-EventSearchTests.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearchTests.testing.xcconfig"; path = "Pods/Target Support Files/Pods-EventSearchTests/Pods-EventSearchTests.testing.xcconfig"; sourceTree = "<group>"; };
 		D639C545DC5798B1C3BB104D /* Pods_EventSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02077136DA68E95C3DD91DF /* Pods-EventSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventSearchTests/Pods-EventSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC26B9C632D767379BA0B888 /* Pods-EventSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventSearch/Pods-EventSearch.release.xcconfig"; sourceTree = "<group>"; };
 		F127B48059EFEE760373BE30 /* Pods_EventSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9162A8171AE70CD85C1A77C /* Pods-EventSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventSearchUITests/Pods-EventSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F9C907359FD1610C9E83E92F /* Pods-EventSearch.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearch.testing.xcconfig"; path = "Pods/Target Support Files/Pods-EventSearch/Pods-EventSearch.testing.xcconfig"; sourceTree = "<group>"; };
 		FA9504C926A44C9094D047AD /* Pods-EventSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventSearch/Pods-EventSearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +157,7 @@
 				0AD937522178D0750030A10A /* Performer.swift */,
 				0AD937542178D07B0030A10A /* Venue.swift */,
 				0AD9374C21783EAC0030A10A /* Favorites.swift */,
+				0A13C02D217A7EC7002405D2 /* NetworkHandler+Mocks.swift */,
 				0A452F4721766739003107B1 /* Main.storyboard */,
 				0A452F4A21766739003107B1 /* Assets.xcassets */,
 				0A452F4C21766739003107B1 /* LaunchScreen.storyboard */,
@@ -190,6 +198,9 @@
 				E02077136DA68E95C3DD91DF /* Pods-EventSearchTests.release.xcconfig */,
 				19E11AF61943D61892778530 /* Pods-EventSearchUITests.debug.xcconfig */,
 				F9162A8171AE70CD85C1A77C /* Pods-EventSearchUITests.release.xcconfig */,
+				F9C907359FD1610C9E83E92F /* Pods-EventSearch.testing.xcconfig */,
+				C4AE6DA02E04B2A9AAD7FB33 /* Pods-EventSearchTests.testing.xcconfig */,
+				4532CA860506D1D6422507E5 /* Pods-EventSearchUITests.testing.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -316,6 +327,8 @@
 				0A452F4E21766739003107B1 /* LaunchScreen.storyboard in Resources */,
 				0A452F4B21766739003107B1 /* Assets.xcassets in Resources */,
 				0A452F4921766739003107B1 /* Main.storyboard in Resources */,
+				0A13C033217A8169002405D2 /* image.png in Resources */,
+				0A13C034217A816C002405D2 /* mock_search_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +462,7 @@
 				0A452F7421768CA1003107B1 /* EventTableViewCell.swift in Sources */,
 				0A452F4621766739003107B1 /* EventListTableViewController.swift in Sources */,
 				0AD9374D21783EAC0030A10A /* Favorites.swift in Sources */,
+				0A13C02E217A7EC7002405D2 /* NetworkHandler+Mocks.swift in Sources */,
 				0A452F4421766738003107B1 /* AppDelegate.swift in Sources */,
 				0AD9374F217845420030A10A /* EventViewModel.swift in Sources */,
 				0AD937532178D0750030A10A /* Performer.swift in Sources */,
@@ -510,6 +524,126 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0A13C02F217A8024002405D2 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Testing;
+		};
+		0A13C030217A8024002405D2 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C907359FD1610C9E83E92F /* Pods-EventSearch.testing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EventSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D TESTING";
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.kinney.EventSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Testing;
+		};
+		0A13C031217A8024002405D2 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4AE6DA02E04B2A9AAD7FB33 /* Pods-EventSearchTests.testing.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EventSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.kinney.EventSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventSearch.app/EventSearch";
+			};
+			name = Testing;
+		};
+		0A13C032217A8024002405D2 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4532CA860506D1D6422507E5 /* Pods-EventSearchUITests.testing.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EventSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.kinney.EventSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventSearch;
+			};
+			name = Testing;
+		};
 		0A452F6621766739003107B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -635,6 +769,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = kevin.kinney.EventSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -653,6 +788,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = kevin.kinney.EventSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -749,6 +885,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A452F6621766739003107B1 /* Debug */,
+				0A13C02F217A8024002405D2 /* Testing */,
 				0A452F6721766739003107B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -758,6 +895,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A452F6921766739003107B1 /* Debug */,
+				0A13C030217A8024002405D2 /* Testing */,
 				0A452F6A21766739003107B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -767,6 +905,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A452F6C21766739003107B1 /* Debug */,
+				0A13C031217A8024002405D2 /* Testing */,
 				0A452F6D21766739003107B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -776,6 +915,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A452F6F21766739003107B1 /* Debug */,
+				0A13C032217A8024002405D2 /* Testing */,
 				0A452F7021766739003107B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
