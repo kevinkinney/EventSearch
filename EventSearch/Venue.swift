@@ -10,5 +10,5 @@ import Foundation
 
 struct Venue: Decodable {
 	let city: String
-	let state: String
+	let state: String?
 }

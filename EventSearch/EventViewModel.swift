@@ -34,6 +34,10 @@ class EventViewModel {
 	}
 	
 	var locationString: String {
-		return "\(event.venue.city), \(event.venue.state)"
+		if let state = event.venue.state {
+			return "\(event.venue.city), \(state)"
+		} else {
+			return event.venue.city
+		}
 	}
 }
